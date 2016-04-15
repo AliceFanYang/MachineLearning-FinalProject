@@ -21,7 +21,7 @@ names_to_states_dict = dict(map(lambda x: [x[0], x[1]], r.json()[1:]))#{name: st
 zips = [["Massachusetts", "01067"], ["Connecticut", "06110"]]
 
 for name, zip_code in zips:
-    parameters = {"get": "P0010001",#"DP04_0104M,DP05_0032E,DP03_0062E,DP04_0047E",
+    parameters = {"get": "P0010001,P0080003, name",#"DP04_0104M,DP05_0032E,DP03_0062E,DP04_0047E",
     #total pop | white pop | income, total householdsmedian household income
     #not sure what the difference between E and M is
                   "for": "zip code tabulation area:" + zip_code,
