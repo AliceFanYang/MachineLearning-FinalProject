@@ -10,33 +10,86 @@ def extractStarBucksData():
 	path = currentPath + '/yelp_academic_dataset_business.json'
 
 	with open(path, 'r') as data_file:  
+		addBusiness = True
 		for line in data_file:
 			businessData = json.loads(line)
 			if businessData['name'] == 'Starbucks':
-				starbucksData.append(businessData)
 
 				# create starbucks info
 				starbucksDict = {}
-				#starbucksDict['starbucks_business_id'] = businessData['business_id'].encode('utf-8')
-				print businessData['business_id'].encode('utf-8')
-				#starbucksDict['avg_stars'] = businessData['stars']
+				starbucksDict['starbucks_business_id'] = businessData['business_id']
+				print businessData['business_id']
+				starbucksDict['avg_stars'] = businessData['stars']
 				#starbucksDict['median_hours_open'] = businessData['business_id']
 
-				if 'Wi-Fi' in businessData['attributes'].keys():
-					if businessData['attributes']['Wi-Fi'] == "no":
+				# attributes
+				attributes = businessData['attributes']
+				if 'Wi-Fi' in attributes.keys():
+					if attributes['Wi-Fi'] == "no":
 						starbucksDict['has_wifi'] = 0
 					else:
 						starbucksDict['has_wifi'] = 1
+				else:
+					addBusiness = False
+
+				if 'Price Range' in attributes.keys():
+					starbucksDict['price_range'] = attributes['Price Range']
+				else:
+					addBusiness = False
+
+				if 'Outdoor Seating' in attributes.keys():
+					if attributes['Outdoor Seating'] == "false":
+						starbucksDict['has_outdoor_seating'] = 0
+					else:
+						starbucksDict['has_outdoor_seating'] = 1
+				else:
+					addBusiness = False
+
+				if 'Accepts Credit Cards' in attributes.keys():
+					if attributes['Accepts Credit Cards'] == "false":
+						starbucksDict['has_credit_card_pay'] = 0
+					else:
+						starbucksDict['has_credit_card_pay'] = 1
+				else:
+					addBusiness = False
 				
-				# starbucksDict['price_range'] = businessData['business_id']
-				# starbucksDict['has_outdoor_seating'] = businessData['business_id']
-				# starbucksDict['has_lot_parking'] = businessData['business_id']
-				# starbucksDict['has_street_parking'] = businessData['business_id']
-				# starbucksDict['has_credit_card_pay'] = businessData['business_id']
-				# starbucksDict['is_wheelchair_accessible'] = businessData['business_id']
+				if 'Wheelchair Accessible' in attributes.keys():
+					if attributes['Wheelchair Accessible'] == "false":
+						starbucksDict['is_wheelchair_accessible'] = 0
+					else:
+						starbucksDict['is_wheelchair_accessible'] = 1
+				else:
+					starbucksDict['is_wheelchair_accessible'] = 0
+
+				
+				if 'Parking' in attributes.keys():
+					parking = attributes['Parking']
+					
+					if 'lot' in parking.keys():
+						if parking['lot'] == "false":
+							starbucksDict['has_lot_parking'] = 0
+						else:
+							starbucksDict['has_lot_parking'] = 1
+					else:
+						starbucksDict['has_lot_parking'] = 0
+
+					if 'street' in parking.keys():
+						if parking['street'] == "false":
+							starbucksDict['has_street_parking'] = 0
+						else:
+							starbucksDict['has_street_parking'] = 1
+					else:
+						starbucksDict['has_street_parking'] = 0
+
+				else:
+					addBusiness = False
 
 				#starbucksDict['num_similar_restaurants'] = businessData['business_id']
 
+				if addBusiness:
+					starbucksData.append(starbucksDict)
+					addBusiness = True	
+				
 
 	convertStarbucksDataToCSV(starbucksData)
 
