@@ -1,7 +1,7 @@
 library(tree)
 library(randomForest)
 
-Starbucks = read.csv("starbucks.csv", header=TRUE)
+Starbucks = read.csv("Starbucks.csv", header=TRUE)
 
 set.seed(1)
 train = sample(1:nrow(Starbucks, nrow(Starbucks)/2))

@@ -2,31 +2,40 @@ import requests
 
 api_key = "12c3359bc69c96ac440e62d8d521d5919f6eb842"
 
-# could later read in a file of zip codes
-
-#zips = [06110, 06107]
-
 # first creaet a dictionary matching state name to state id
-parameters = {"get": "NAME",
-              "for": "state"}
-r = requests.get("http://api.census.gov/data/2014/acs5?key=" + \
-                 api_key, params = parameters)
-#print(r.text)
+#parameters = {"get": "NAME",
+#              "for": "state"}
+#r = requests.get("http://api.census.gov/data/2014/acs5?key=" + \
+#                 api_key, params = parameters)
+#states_json = r.json()[1:]
+#names_to_states_dict = dict(map(lambda x: [x[0], x[1]], r.json()[1:]))
 
-states_json = r.json()[1:]
-names_to_states_dict = dict(map(lambda x: [x[0], x[1]], r.json()[1:]))#{name: state for name, state in r.json[1:]}
-#print(names_to_states_dict["Alabama"])
+ 
+# The list taken in will assume the order is: [state_name, zip]
+# could later read in a file of zip codes
+zips = ["10029", "94040"]#[["Massachusetts", "01067"], ["Connecticut", "06110"]]
 
-#The list taken in will assume the order is: [state_name, zip]
-zips = [["Massachusetts", "01067"], ["Connecticut", "06110"]]
+for zip_code in zips: #name, zip_code in zips:
+    # pulled from the 2010 census data based on a tutorial Alice gave me from
+    # the data visualization class that works
+    #parameters2010 = {"get": "P0010001,P0080003",
+    #              "for": "zip code tabulation area:" + zip_code,
+    #              "in": "state:" + names_to_states_dict[name]}
 
-for name, zip_code in zips:
-    parameters = {"get": "P0010001,P0080003, name",#"DP04_0104M,DP05_0032E,DP03_0062E,DP04_0047E",
-    #total pop | white pop | income, total householdsmedian household income
-    #not sure what the difference between E and M is
-                  "for": "zip code tabulation area:" + zip_code,
-                  "in": "state:" + names_to_states_dict[name]}
-    r = requests.get("http://api.census.gov/data/2010/sf1?key=" + \
+    # total pop
+    # white pop not hispanic not latino
+    # average household size
+    # median household income
+    # median household income white homeowner
+    # median household income asian homeowner
+    # http://api.census.gov/data/2014/acs5/variables.html
+    # http://api.census.gov/data/2014/acs5/examples.html
+    #print(names_to_states_dict[name])
+    parameters = {"get":"B01001_001E,B01001H_001E,B25010_001E,B19013_001E,B19013A_001E,B19013D_001E",
+                  "for": "zip code tabulation area:" + zip_code}#,
+                  #"in": "state:" + names_to_states_dict[name]}
+				
+    r = requests.get("http://api.census.gov/data/2014/acs5?key=" + \
                  api_key, params = parameters)
 
     print(r.text)
