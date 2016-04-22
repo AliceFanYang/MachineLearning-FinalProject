@@ -18,24 +18,27 @@ def extractStarBucksData():
 
 				# create starbucks info
 				starbucksDict = {}
-				starbucksDict['starbucks_business_id'] = businessData['business_id']
-				print businessData['business_id']
+				#starbucksDict['starbucks_business_id'] = businessData['business_id']
+				#print businessData['business_id']
 				starbucksDict['avg_stars'] = businessData['stars']
 				#starbucksDict['median_hours_open'] = businessData['business_id']
 
 				address = businessData['full_address']
 				zipcode = address[-5::]
-				if " " not in zipcode:
-					starbucksDict['zipcode'] = zipcode
-				else: 
+				if " " in zipcode:
 					addBusiness = False
 
 
 				usCensusData = us_census_data.getDataFromUSCensusWithZipcode(zipcode)
-				starbucksDict['total_population'] = usCensusData[zipcode]["total_population"]
-				starbucksDict['percent_white_people'] = usCensusData[zipcode]["percent_white_people"]
-				starbucksDict['people_per_household'] = usCensusData[zipcode]["people_per_household"]
-				starbucksDict['yearly_household_income'] = usCensusData[zipcode]["yearly_household_income"]
+				if usCensusData != {}:
+					starbucksDict['total_population'] = usCensusData[zipcode]["total_population"]
+					starbucksDict['percent_white_people'] = usCensusData[zipcode]["percent_white_people"]
+					starbucksDict['people_per_household'] = usCensusData[zipcode]["people_per_household"]
+					starbucksDict['yearly_household_income'] = usCensusData[zipcode]["yearly_household_income"]
+				else:
+					print("us census data not added")
+					addBusiness = False
+				
 
 				# attributes
 				attributes = businessData['attributes']
@@ -103,13 +106,14 @@ def extractStarBucksData():
 
 				if addBusiness:
 					starbucksData.append(starbucksDict)
-					addBusiness = True	
+				addBusiness = True
 				
 
 	convertStarbucksDataToCSV(starbucksData)
 
 
 def convertStarbucksDataToCSV(starbucksData):
+	print ("converting json to csv")
 	# http://stackoverflow.com/questions/3086973/how-do-i-convert-this-list-of-dictionaries-to-a-csv-file-python
 	keys = starbucksData[0].keys()
 	with open('starbucks.csv', 'wb') as output_file:

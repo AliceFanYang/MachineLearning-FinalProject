@@ -29,10 +29,20 @@ def getDataFromUSCensusWithZipcode(zip_code):
 				
     r = requests.get("http://api.census.gov/data/2014/acs5?key=" + \
                  api_key, params = parameters)
+
+    # error handling if no data or incorrect data
+    if r.status_code != 200:
+      print("error in census data")
+      return {}
+
+    if r.json()[1][2] == None:
+      print("error in census data")
+      return {}
+
     data = {}
     predictors = ["total_population", "percent_white_people", "people_per_household", "yearly_household_income"]
+    print(zip_code)
     float_data = [float(i) for i in r.json()[1]]
-
     # need to fix but ok for now
     float_data[1] = round(float_data[1]/float_data[0], 10)
     predictors_dict = dict(zip(predictors, float_data))
@@ -40,7 +50,7 @@ def getDataFromUSCensusWithZipcode(zip_code):
     return data
     
 
-#getDataFromUSCensusWithZipcode("06110")
+getDataFromUSCensusWithZipcode("89109")
 
 # first creaet a dictionary matching state name to state id
 #parameters = {"get": "NAME",
