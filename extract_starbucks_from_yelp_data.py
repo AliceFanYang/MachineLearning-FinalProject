@@ -1,6 +1,7 @@
 import os
 import json
 import csv
+import us_census_data
 
 def extractStarBucksData():
 
@@ -21,6 +22,20 @@ def extractStarBucksData():
 				print businessData['business_id']
 				starbucksDict['avg_stars'] = businessData['stars']
 				#starbucksDict['median_hours_open'] = businessData['business_id']
+
+				address = businessData['full_address']
+				zipcode = address[-5::]
+				if " " not in zipcode:
+					starbucksDict['zipcode'] = zipcode
+				else: 
+					addBusiness = False
+
+
+				usCensusData = us_census_data.getDataFromUSCensusWithZipcode(zipcode)
+				starbucksDict['total_population'] = usCensusData[zipcode]["total_population"]
+				starbucksDict['percent_white_people'] = usCensusData[zipcode]["percent_white_people"]
+				starbucksDict['people_per_household'] = usCensusData[zipcode]["people_per_household"]
+				starbucksDict['yearly_household_income'] = usCensusData[zipcode]["yearly_household_income"]
 
 				# attributes
 				attributes = businessData['attributes']
