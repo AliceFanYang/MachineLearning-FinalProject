@@ -1,0 +1,353 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.6)  6 MAY 2016 04:23
+entering extended mode
+**C:/Users/youyou/Desktop/CompSci/School/Spring2016/SDS293/final_project/Machin
+eLearning-FinalProject/writeup.tex
+
+(C:/Users/youyou/Desktop/CompSci/School/Spring2016/SDS293/final_project/Machine
+Learning-FinalProject/writeup.tex
+LaTeX2e <2015/10/01> patch level 2
+Babel <3.9n> and hyphenation patterns for 69 languages loaded.
+("C:\Users\youyou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Users\youyou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Users\youyou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\multicol.st
+y"
+Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
+\c@tracingmulticols=\count87
+\mult@box=\box26
+\multicol@leftmargin=\dimen103
+\c@unbalance=\count88
+\c@collectmore=\count89
+\doublecol@number=\count90
+\multicoltolerance=\count91
+\multicolpretolerance=\count92
+\full@width=\dimen104
+\page@free=\dimen105
+\premulticols=\dimen106
+\postmulticols=\dimen107
+\multicolsep=\skip43
+\multicolbaselineskip=\skip44
+\partial@page=\box27
+\last@line=\box28
+\maxbalancingoverflow=\dimen108
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count93
+\c@finalcolumnbadness=\count94
+\last@try=\dimen109
+\multicolovershoot=\dimen110
+\multicolundershoot=\dimen111
+\mult@nat@firstbox=\box50
+\colbreak@box=\box51
+\mc@col@check@num=\count95
+)
+("C:\Users\youyou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry
+.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("C:\Users\youyou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.s
+ty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Users\youyou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.
+sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+("C:\Users\youyou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifvtex
+.sty"
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Users\youyou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex
+.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count96
+\Gm@cntv=\count97
+\c@Gm@tempcnt=\count98
+\Gm@bindingoffset=\dimen112
+\Gm@wd@mp=\dimen113
+\Gm@odd@mp=\dimen114
+\Gm@even@mp=\dimen115
+\Gm@layoutwidth=\dimen116
+\Gm@layoutheight=\dimen117
+\Gm@layouthoffset=\dimen118
+\Gm@layoutvoffset=\dimen119
+\Gm@dimlist=\toks15
+
+("C:\Users\youyou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry
+.cfg"))
+("C:\Users\youyou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumitem
+.sty"
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip45
+\enit@outerparindent=\dimen120
+\enit@toks=\toks16
+\enit@inbox=\box52
+\enitdp@description=\count99
+)
+("C:\Users\youyou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx
+.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\youyou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics
+.sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\youyou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
+"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Users\youyou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\graphics
+.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+("C:\Users\youyou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftex-def\pdftex
+.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Users\youyou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwar
+err.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Users\youyou\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmd
+s.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count100
+))
+\Gin@req@height=\dimen121
+\Gin@req@width=\dimen122
+)
+("C:\Users\youyou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.s
+ty"
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+("C:\Users\youyou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.
+sty"
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen123
+\captionmargin@=\dimen124
+\captionwidth=\dimen125
+\caption@tempdima=\dimen126
+\caption@indent=\dimen127
+\caption@parindent=\dimen128
+\caption@hangindent=\dimen129
+)
+\c@ContinuedFloat=\count101
+) (writeup.aux)
+\openout1 = `writeup.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(54.2025pt, 505.89pt, 54.2025pt)
+* v-part:(T,H,B)=(54.2025pt, 686.56499pt, 54.2025pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=505.89pt
+* \textheight=686.56499pt
+* \oddsidemargin=-18.06749pt
+* \evensidemargin=-18.06749pt
+* \topmargin=-55.06749pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+("C:\Users\youyou\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.m
+kii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count102
+\scratchdimen=\dimen130
+\scratchbox=\box53
+\nofMPsegments=\count103
+\nofMParguments=\count104
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count105
+\MPscratchDim=\dimen131
+\MPnumerator=\count106
+\makeMPintoPDFobject=\count107
+\everyMPtoPDFconversion=\toks18
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+Missing character: There is no ‚ in font cmr17!
+Missing character: There is no Ä in font cmr17!
+Missing character: There is no ô in font cmr17!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 16.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 28.
+ ("C:\Users\youyou\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
+ <boostingChart.png, id=1, 484.30937pt x 395.97937pt>
+File: boostingChart.png Graphic file (type png)
+ <use boostingChart.png>
+Package pdftex.def Info: boostingChart.png used on input line 50.
+(pdftex.def)             Requested size: 247.94499pt x 202.72624pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 52.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 52.
+
+<confusionMatrixLda.png, id=3, 158.09062pt x 115.43124pt>
+File: confusionMatrixLda.png Graphic file (type png)
+
+<use confusionMatrixLda.png>
+Package pdftex.def Info: confusionMatrixLda.png used on input line 78.
+(pdftex.def)             Requested size: 247.94499pt x 181.0513pt.
+ [1
+
+{C:/Users/youyou/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./boosting
+Chart.png>]
+<avgstars.png, id=14, 405.01312pt x 361.35pt>
+File: avgstars.png Graphic file (type png)
+ <use avgstars.png>
+Package pdftex.def Info: avgstars.png used on input line 88.
+(pdftex.def)             Requested size: 247.94499pt x 221.21716pt.
+
+<pc12.png, id=15, 476.78125pt x 360.34625pt>
+File: pc12.png Graphic file (type png)
+ <use pc12.png>
+Package pdftex.def Info: pc12.png used on input line 98.
+(pdftex.def)             Requested size: 247.94499pt x 187.39761pt.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+
+LaTeX Warning: Reference `fig:pcavgstars' on page 2 undefined on input line 102
+.
+
+<pc23.png, id=16, 405.515pt x 381.92688pt>
+File: pc23.png Graphic file (type png)
+ <use pc23.png>
+Package pdftex.def Info: pc23.png used on input line 108.
+(pdftex.def)             Requested size: 247.94499pt x 233.52869pt.
+ [2 <./confusionMatrixLda.png> <./avgstars.png> <./pc12.png>]
+<pc34.png, id=24, 473.77pt x 364.86313pt>
+File: pc34.png Graphic file (type png)
+ <use pc34.png>
+Package pdftex.def Info: pc34.png used on input line 118.
+(pdftex.def)             Requested size: 247.94499pt x 190.94916pt.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [3 <./pc23.png> <./pc34.png>] (writeup.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3151 strings out of 493634
+ 50192 string characters out of 3134832
+ 129323 words of memory out of 3000000
+ 6538 multiletter control sequences out of 15000+200000
+ 7588 words of font info for 27 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 36i,8n,39p,997b,334s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/youyou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmbx10.pfb><C:/Users/youyou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmbx12.pfb><C:/Users/youyou/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/youyou/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/youyou/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/
+youyou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pf
+b><C:/Users/youyou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmr7.pfb><C:/Users/youyou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr8.pfb><C:/Users/youyou/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on writeup.pdf (3 pages, 364721 bytes).
+PDF statistics:
+ 61 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+
